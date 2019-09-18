@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+}
+.main{
+    width: 100%；
+}
+.container{
+    width: 60%;
+}
+/* header头部 */
+header{
+    width: 100%;
+    height: 60px;
+    background: #2e2e2e;
+}
+header>a:hover{
+    cursor: pointer;
+}
+header>a>img{
+    float: left;
+    margin: 15px 0  15px 10%;
+}
+header>nav{
+    float:right;
+    margin-right: 10%;
+}
+header>nav>a{
+    display: block;
+    margin-left: 20px;
+    float: left;
+    line-height: 60px;
+    color: #eee;
+}
+header>nav>a:hover{
+    color: #f46208;
+}
+/* banner图 */
+.banner{
+    width: 100%;
+    height: 427px;
+    /* background: url(img/banner.jpg) no-repeat; */
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+.banner article{
+    position: absolute;
+    width: 60%;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    margin: -50px 0 0 -30%;
+    z-index: 2;
+    color: #fff;
+}
+.banner article h2{
+    font-size: 58px;
+    text-align: center;
+}
+.banner article p{
+    font-size: 14px;
+    text-align: center;
+}
+/* portfolio */
+.portfolio{
+    width: 100%;
+    height: 615px;
+}
+/* .portfolio article  部分 */
+ article{
+    width: 60%;
+    /* height: 260px; */
+    margin: 0 auto;
+    font-family: Microsoft YaHei UI;
+}
+.portfolio article{
+    height: 260px;
+    position: relative;
+}
+ article .title{
+    padding-top:  30px;
+    font-size: 48px;
+    color:#f46208;
+    text-align: center;
+}
+ article .tx{
+    padding: 30px 0;
+    font-size: 14px;
+    columns: #2e2e2e;
+    text-align: center;
+}
+.portfolio article nav{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.portfolio article nav li{
+    display: inline-block;
+    margin:0 5px;
+    padding: 5px;
+    color: #f46208;
+    border: 1px solid #f46208;
+}
+.portfolio article nav li:hover{
+    background: #f46208;
+    color: #fff; 
+}
+/* portfolio .pro-pic 部分 */
+.portfolio .pro-pic img{
+    width: 100%;
+    height: 355px;
+}
+/* .stats部分 */
+.stats{
+    width: 100%;
+    height: 368px;
+}
+.stats article{
+    height: 100%;
+    padding: 0 auto;
+    padding-top: 10px;
+}
+.stats article .lis{
+    width: 100%;
+}
+.stats article .lis dl{
+    float:left;
+    display: inline-block;
+    text-align: center;
+    width: 21%;
+}
+.stats article .lis dl:nth-child(2){
+    padding:0  5%;
+}
+.stats article .lis dl:nth-child(3){
+    padding: 0 5% 0 0;
+}
+.stats article .lis dl dd:first-of-type{
+    margin: 15px 0;
+}
+.stats article .lis dl dd:last-of-type{
+    color:#f46208;
+    font-size: 1.5em;
+}
+/* team 部分 */
+.team{
+    width: 100%;
+    height: 500px;
+    background: #2e2e2e;
+}
+.team article{
+    height: 100%;
+}
+.team article .tx{
+    color: #fff;
+}
+.team article .lis{
+    width: 100%;
+}
+.team article .lis dl{
+    display: inline-block;
+    width: 30%;
+    color: #fff;
+}
+.team article .lis dl:nth-child(2){
+    padding: 0 4%;
+}
+.team article .lis dl dt{
+    text-align: center;
+}
+.team article .lis dl dd{
+    width: 100%;
+    text-align: center;
+}
+.team article .lis dl dd:first-of-type{
+    font-size: 16px;
+}
+.team article .lis dl dd:last-of-type{
+    font-size: 13px;
+}
+/* .contact 部分 */
+.contact{
+    width: 100%;
+    height: 534px;
+}
+.contact article{
+    height: 195px;
+}
+.contact .info{
+    /* width: 60%; */
+    width: 700px;
+    height: 270px;
+    margin: 0 auto;
+    position: relative;
+}
+.contact .info input{
+    padding-left: 5px;
+    border: 1px solid #e0e0e0;
+}
+.contact .info #name{
+    float: left;
+    width: 294px;
+    height: 37px;
+}
+.contact .info #email{
+    float: right;
+    width: 294px;
+    height: 37px;
+}
+.contact .info #text{
+    width: 100%;
+    height: 172px;
+    margin: 10px 0;
+}
+.contact .info  a #sub{
+    width: 130px;
+    height: 37px;
+    background: #f46208;
+    border:none;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+}
+.contact .info  a #sub:hover{
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 70px;
+    background: #2e2e2e;
+}
+footer p{
+    height: 70px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    line-height: 70px;
+}
