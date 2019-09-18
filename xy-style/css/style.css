@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    font-family: "宋体";
+}
+a{text-decoration: none;}
+/* iphone6 */
+/* 第一部分one */
+.one{
+    width: 100%;
+}
+.one .header{
+    width: 100%;
+    height: .8rem;
+    background: #7EA6B1;
+    position: relative;
+}
+.one .header p{
+    text-align: center;
+    font-size: .3rem;
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    color: #fff;
+}
+.one .header a{
+    display: block;
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+    border: 1px solid #B2C5CC;
+    right: .5rem;
+    top:0.4rem; 
+    margin-top:-.1rem ;
+}
+.one .header nav{
+    height: 0;
+    background: #7EA6B1;
+    overflow: hidden;
+    transition: height 1s;
+}
+.one .header nav li{
+    border-bottom: .1px solid #B2C5CC;
+    text-align: center;
+    font-size: .2rem;
+    height: .4rem;
+    line-height: .4rem;
+    color: #fff;
+}
+.one .one_content{
+    height: 3.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #B2C5CC;
+    padding-bottom: 1rem;
+}
+.one .one_content img{
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: .3rem auto;
+}
+.one_content p{
+    font-size: .2rem;
+    margin-bottom: .5rem;
+    color: #fff;
+}
+.one .one_content input{
+    background: #fff;
+    padding: .1rem .5rem;
+    font-size: .1rem;
+}
+/* 第二部分two */
+.two{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #bababa;
+}
+.two div{
+    flex: 1;
+    width: 25%;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    font-size: .07rem;
+    color: #bababa;
+}
+.two div.active{
+    color: #545454;
+}
+/* 第三部分three */
+.three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.three p:nth-child(1){
+    font-size: .3rem;
+    margin-bottom: .3rem;
+    text-align: center;
+    color: #545454;
+    font-weight: bold;
+}
+.three p:nth-child(2){
+    font-size: .07rem;
+    line-height: .3rem;
+    width: 70%;
+    color: #bababa;
+}
+/* 第四部分four */
+.four{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: .7rem;
+    background: #f4f4f4;
+    color: #bababa;
+    padding: .1rem 0;
+}
+.four p{
+    font-size: .3rem;
+}
+.four a{
+    font-size: .2rem;
+    color: #bababa;
+}
+.four a span{
+    color: #545454;
+}
+/* 第五部分five */
+.five {
+    padding: 6% 0;
+    background: url("../img/bg.jpg") no-repeat ;
+    background-size: 100% 100%;
+}
+.five p{
+    font-size: .3rem;
+    padding-left: 2%;
+    color: #333;
+}
+.five .items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.five .items img{
+    display:inline-block;
+    margin: 2%;
+    width: 46%;
+    height: 150px;
+}
+/* 第六部分six */
+.six{
+    background: #f4f4f4;
+}
+.six p{
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    font-size: .2rem;
+}
+
+/* ipad */
+
+@media screen and (min-width:700px){
+    /* 第一部分one */
+    .one .header p,.one .header a{
+        display: none;
+    }
+    .one .header{background: #B2C5CC;}
+    .one .header nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+        height: .8rem;
+        background: #B2C5CC;
+    }
+    .one .header nav li{
+        flex: 1;
+        border: none;
+        color: #757575;  
+    }
+    .one .header nav li.active{
+        color: #afafaf;
+    }
+    .one .one_content input{
+        font-size: .3rem;
+    }
+    /* 第四部分four */
+    .four{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 .4rem;;
+    }
+    /* 第五部分five */
+    .five .items img{
+        width: 28%;
+    }
+}
